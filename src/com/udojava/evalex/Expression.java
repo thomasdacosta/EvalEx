@@ -564,7 +564,7 @@ public class Expression {
 			this.input = input.trim();
 		}
 
-		@Override
+//		@Override
 		public boolean hasNext() {
 			return (pos < input.length());
 		}
@@ -582,7 +582,7 @@ public class Expression {
 			}
 		}
 
-		@Override
+//		@Override
 		public String next() {
 			StringBuilder token = new StringBuilder();
 			if (pos >= input.length()) {
@@ -640,7 +640,7 @@ public class Expression {
 			return previousToken = token.toString();
 		}
 
-		@Override
+//		@Override
 		public void remove() {
 			throw new ExpressionException("remove() not supported");
 		}
